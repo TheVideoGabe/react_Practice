@@ -1,8 +1,16 @@
-import React from 'react'
+import Hero from '../components/Hero'
+import Homecards from '../components/Homecards'
+import JobListings from '../components/JobListings'
+import ViewAllJobs from '../components/ViewAllJobs'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+    <Hero />
+    <Homecards />
+    <JobListings isHome='true'/>
+    <ViewAllJobs />
+    </>
   )
 }
 
