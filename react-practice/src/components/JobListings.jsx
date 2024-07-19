@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react';
-import jobs from '../jobs.json'
+// import jobs from '../jobs.json'
 import JobListing from './JobListing'
 import Spinner from './Spinner';
 
@@ -9,7 +9,7 @@ const JobListings = ({isHome = false}) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const apiUrl = isHome ? 'http://localhost:8000/jobs?_limit=3' : 'http://localhost:8000/jobs'
+      const apiUrl = isHome ? '/api/jobs?_limit=3' : '/api/jobs'
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
