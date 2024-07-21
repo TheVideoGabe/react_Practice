@@ -1,7 +1,7 @@
 
 
 {/* <!-- Hero --> */}
-const Hero = ({title='test.', subtitles='testing testing'}) => {
+const Hero = ({title='Job Board', subtitles='CRUD App with JSON Server API'}) => {
     return (
         <section className="bg-indigo-700 py-20 mb-4">
     <div
